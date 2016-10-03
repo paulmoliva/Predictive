@@ -9,9 +9,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        Welcome to your new Eos app
-      </div>
+      <div>{this.props.children}</div>
     );
   }
 }
