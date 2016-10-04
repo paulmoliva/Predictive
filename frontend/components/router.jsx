@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 // import components here
 import App from './app';
 import SplashContainer from './splash/splash_container';
+import ContractContainer from './contract/contract_container';
 
 class AppRouter extends React.Component{
   constructor(props){
@@ -15,6 +16,7 @@ class AppRouter extends React.Component{
   		<Router history={hashHistory}>
         <Route path="/" component={ App }>
           <IndexRoute component={ SplashContainer } />
+          <Route path='contract' component={ ContractContainer } />
         </Route>
   		</Router>
   	);
